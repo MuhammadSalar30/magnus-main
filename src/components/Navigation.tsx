@@ -45,17 +45,20 @@ const Navigation: React.FC<NavigationProps> = ({
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.slice(0, -1).map((item) => (
-              <button
-                key={item.id}
-                onClick={() => onNavigateToPage(item.id)}
-                className={`text-base font-semibold transition-colors hover:text-[#C09D68] ${
-                  currentPage === item.id 
-                    ? 'text-[#C09D68]' 
-                    : isScrolled ? 'text-gray-700' : 'text-white'
-                }`}
-              >
-                {item.label}
-              </button>
+         <button
+         key={item.id}
+         onClick={() => onNavigateToPage(item.id)}
+         className={`px-4 py-2 rounded-md text-base font-semibold transition-all ${
+           currentPage === item.id
+             ? 'bg-black/30 text-white'
+             : isScrolled 
+               ? 'text-gray-700 hover:text-[#C09D68]' 
+               : 'bg-black/30 text-white hover:bg-black/50'
+         }`}
+       >
+         {item.label}
+       </button>
+       
             ))}
             
             <button
