@@ -30,7 +30,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigateToContact }) => {
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
                 Premium STR
-                <span className="block text-transparent bg-clip-text bg-[#C09D68] font-extrabold tracking-tight ">
+                <span className="block text-transparent bg-clip-text bg-[#C09D68] font-extrabold tracking-tight py-4">
                   Management
                 </span>
               </h1>
