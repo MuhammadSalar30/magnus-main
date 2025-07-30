@@ -22,14 +22,36 @@ const LandlordsPage: React.FC<LandlordsPageProps> = ({ onNavigateToContact }) =>
   ];
 
   return (
-    <div className="min-h-screen bg-white ">
+    
+   <div className="min-h-screen bg-white ">
       {/* Hero Section */}
+
+
       <section className="bg-gradient-to-br from-[#0B0B0B] via-gray-900 to-[#0B0B0B] py-24"  style={{
-          backgroundImage: "url('https://ik.imagekit.io/nwfkojxnt/IMG-20250714-WA0012.jpeg?updatedAt=1753870547030')",
+          backgroundImage: "url('https://ik.imagekit.io/nwfkojxnt/IMG-20250714-WA0011.jpeg?updatedAt=1753889047316')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}>
+
+      {/* <section className="bg-gradient-to-br from-[#0B0B0B] via-gray-900 to-[#0B0B0B] relative w-full h-screen overflow-hidden"  style={{
+          backgroundImage: "url('https://ik.imagekit.io/nwfkojxnt/IMG-20250714-WA0011.jpeg?updatedAt=1753889047316')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          
+        }}> */}
+
+{/* 
+<section className="relative h-screen w-full overflow-hidden">
+  <img
+    src="https://ik.imagekit.io/nwfkojxnt/IMG-20250714-WA0011.jpeg?updatedAt=1753889047316"
+    alt="Hero Background"
+    className="w-full h-full object-contain"
+  />
+</section> */}
+
+
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
