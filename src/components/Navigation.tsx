@@ -53,7 +53,7 @@ const Navigation: React.FC<NavigationProps> = ({
              ? 'bg-black/30 text-white'
              : isScrolled 
                ? 'text-gray-700 hover:text-[#C09D68]' 
-               : 'bg-black/30 text-white hover:bg-black/50'
+               : 'bg-black/60 text-white hover:bg-black/80'
          }`}
        >
          {item.label}
