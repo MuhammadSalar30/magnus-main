@@ -50,7 +50,7 @@ const Navigation: React.FC<NavigationProps> = ({
          onClick={() => onNavigateToPage(item.id)}
          className={`px-4 py-2 rounded-md text-base font-semibold transition-all duration-300 ${
           currentPage === item.id
-            ? 'bg-black/80 text-[#C09D68]'
+            ? 'bg-black/100 text-[#C09D68]'
             : isScrolled 
               ? 'text-gray-700 hover:text-[#C09D68]' 
               : 'bg-black/50 text-white hover:text-[#C09D68]'
