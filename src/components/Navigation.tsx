@@ -48,13 +48,14 @@ const Navigation: React.FC<NavigationProps> = ({
          <button
          key={item.id}
          onClick={() => onNavigateToPage(item.id)}
-         className={`px-4 py-2 rounded-md text-base font-semibold transition-all ${
-           currentPage === item.id
-             ? 'bg-black/30 text-white'
-             : isScrolled 
-               ? 'text-gray-700 hover:text-[#C09D68]' 
-               : 'bg-black/60 text-white hover:bg-black/80'
-         }`}
+         className={`px-4 py-2 rounded-md text-base font-semibold transition-all duration-300 ${
+          currentPage === item.id
+            ? 'bg-black/80 text-[#C09D68]'
+            : isScrolled 
+              ? 'text-gray-700 hover:text-[#C09D68]' 
+              : 'bg-black/50 text-white hover:text-[#C09D68]'
+        }`}
+        
        >
          {item.label}
        </button>
